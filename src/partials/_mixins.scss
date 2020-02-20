@@ -1,0 +1,12 @@
+@mixin btn ($borderColor, $backgroundColor, $borderRadius,
+$padding, $lineHeight) {
+  display: inline-block;
+  padding: $padding;
+  border: 1px solid $borderColor;
+  background-color: $backgroundColor;
+  border-radius: $borderRadius;
+  line-height: $lineHeight;
+  &:hover {
+    background-color: darken($backgroundColor, 20);
+  }
+}
